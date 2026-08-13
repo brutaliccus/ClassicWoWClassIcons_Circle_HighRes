@@ -42,7 +42,7 @@ The **final icons in this folder** are a modern rebuild of the classic Warcraft 
 
 ### All classes (overview)
 
-Left = original 38×35 mini · Right = new build
+Left = original 38×35 mini · Right = new build (transparent PNG — corners are real alpha, not a checkerboard)
 
 ![Old vs new — all classes](comparison/overview.png)
 
