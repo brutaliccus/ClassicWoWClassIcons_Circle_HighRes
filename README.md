@@ -102,16 +102,3 @@ Regenerate after rebuilding icons:
 ```bash
 python make_comparisons.py
 ```
-### File mapping
-
-| Class | Original (`old minis/`) | New output |
-|-------|-------------------------|------------|
-| warrior | `Warrior_Icon.gif` | `warrior.png` |
-| paladin | `Paladin_Icon.gif` | `paladin.png` |
-| rogue | `Rogue_Icon.gif` | `rogue.png` |
-| mage | `Mage_Icon.gif` | `mage.png` |
-| hunter | `Hunter_Icon.gif` | `hunter.png` |
-| druid | `Druid_Icon.gif` | `druid.png` |
-| priest | `Priest_Icon.gif` | `priest.png` |
-| warlock | `Warlock_Icon.gif` | `warlock.png` |
-| shaman | `Shaman_Icon.png` | `shaman.png` |
