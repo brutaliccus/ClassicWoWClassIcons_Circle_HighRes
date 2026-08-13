@@ -25,8 +25,10 @@ Requires Python 3.10+.
 | `layer4_mid/` | Mid layer (above haze, behind ring) |
 | `layer5_front/` | Front overhang (above ring) |
 | `build_class_icons_old_school.py` | Builder script and all tuning constants |
-| `comparison/` | Side-by-side old vs new images (see below) |
-| `make_comparisons.py` | Regenerate `comparison/` after rebuilding icons |
+| `comparison/github-dark/` | README images for GitHub dark theme |
+| `comparison/github-light/` | README images for GitHub light theme |
+| `comparison/transparent/` | True alpha PNGs (for editors; not for README) |
+| `make_comparisons.py` | Regenerate all comparison variants |
 
 ## Classes
 
@@ -42,29 +44,71 @@ The **final icons in this folder** are a modern rebuild of the classic Warcraft 
 
 ### All classes (overview)
 
-Left = original 38×35 mini · Right = new build (transparent PNG — corners are real alpha, not a checkerboard)
+Left = original 38×35 mini · Right = new build.
 
-![Old vs new — all classes](comparison/overview.png)
+The PNGs in `comparison/transparent/` have real alpha, but **GitHub and most Markdown previews do not show that as see-through** — they either draw a grey/white checkerboard (Cursor, VS Code) or flatten transparency unpredictably. The README therefore uses theme-matched images via `<picture>`:
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="comparison/github-dark/overview.png">
+  <source media="(prefers-color-scheme: light)" srcset="comparison/github-light/overview.png">
+  <img src="comparison/github-light/overview.png" alt="Old vs new — all classes">
+</picture>
 
 ### Per class
 
-![Warrior — old vs new](comparison/warrior.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="comparison/github-dark/warrior.png">
+  <source media="(prefers-color-scheme: light)" srcset="comparison/github-light/warrior.png">
+  <img src="comparison/github-light/warrior.png" alt="Warrior — old vs new">
+</picture>
 
-![Paladin — old vs new](comparison/paladin.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="comparison/github-dark/paladin.png">
+  <source media="(prefers-color-scheme: light)" srcset="comparison/github-light/paladin.png">
+  <img src="comparison/github-light/paladin.png" alt="Paladin — old vs new">
+</picture>
 
-![Rogue — old vs new](comparison/rogue.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="comparison/github-dark/rogue.png">
+  <source media="(prefers-color-scheme: light)" srcset="comparison/github-light/rogue.png">
+  <img src="comparison/github-light/rogue.png" alt="Rogue — old vs new">
+</picture>
 
-![Mage — old vs new](comparison/mage.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="comparison/github-dark/mage.png">
+  <source media="(prefers-color-scheme: light)" srcset="comparison/github-light/mage.png">
+  <img src="comparison/github-light/mage.png" alt="Mage — old vs new">
+</picture>
 
-![Hunter — old vs new](comparison/hunter.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="comparison/github-dark/hunter.png">
+  <source media="(prefers-color-scheme: light)" srcset="comparison/github-light/hunter.png">
+  <img src="comparison/github-light/hunter.png" alt="Hunter — old vs new">
+</picture>
 
-![Druid — old vs new](comparison/druid.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="comparison/github-dark/druid.png">
+  <source media="(prefers-color-scheme: light)" srcset="comparison/github-light/druid.png">
+  <img src="comparison/github-light/druid.png" alt="Druid — old vs new">
+</picture>
 
-![Priest — old vs new](comparison/priest.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="comparison/github-dark/priest.png">
+  <source media="(prefers-color-scheme: light)" srcset="comparison/github-light/priest.png">
+  <img src="comparison/github-light/priest.png" alt="Priest — old vs new">
+</picture>
 
-![Warlock — old vs new](comparison/warlock.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="comparison/github-dark/warlock.png">
+  <source media="(prefers-color-scheme: light)" srcset="comparison/github-light/warlock.png">
+  <img src="comparison/github-light/warlock.png" alt="Warlock — old vs new">
+</picture>
 
-![Shaman — old vs new](comparison/shaman.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="comparison/github-dark/shaman.png">
+  <source media="(prefers-color-scheme: light)" srcset="comparison/github-light/shaman.png">
+  <img src="comparison/github-light/shaman.png" alt="Shaman — old vs new">
+</picture>
 
 Regenerate after rebuilding icons:
 
