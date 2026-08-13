@@ -25,6 +25,8 @@ Requires Python 3.10+.
 | `layer4_mid/` | Mid layer (above haze, behind ring) |
 | `layer5_front/` | Front overhang (above ring) |
 | `build_class_icons_old_school.py` | Builder script and all tuning constants |
+| `comparison/` | Side-by-side old vs new images (see below) |
+| `make_comparisons.py` | Regenerate `comparison/` after rebuilding icons |
 
 ## Classes
 
@@ -36,11 +38,39 @@ Edit constants at the top of `build_class_icons_old_school.py` — art scale, pa
 
 ## Comparison vs original WC3 minis
 
-The **final icons in this folder** are a modern rebuild of the classic Warcraft III class minis. The originals live in the sibling folder:
+The **final icons in this folder** are a modern rebuild of the classic Warcraft III class minis. Originals: `C:\Users\jeb32\OneDrive\Documents\class icons\old minis` (not bundled here).
 
-`C:\Users\jeb32\OneDrive\Documents\class icons\old minis`
+### All classes (overview)
 
-(Not included in this repo — copy that folder locally if you want side-by-side files.)
+Left = original 38×35 mini · Right = new build
+
+![Old vs new — all classes](comparison/overview.png)
+
+### Per class
+
+![Warrior — old vs new](comparison/warrior.png)
+
+![Paladin — old vs new](comparison/paladin.png)
+
+![Rogue — old vs new](comparison/rogue.png)
+
+![Mage — old vs new](comparison/mage.png)
+
+![Hunter — old vs new](comparison/hunter.png)
+
+![Druid — old vs new](comparison/druid.png)
+
+![Priest — old vs new](comparison/priest.png)
+
+![Warlock — old vs new](comparison/warlock.png)
+
+![Shaman — old vs new](comparison/shaman.png)
+
+Regenerate after rebuilding icons:
+
+```bash
+python make_comparisons.py
+```
 
 ### At a glance
 
